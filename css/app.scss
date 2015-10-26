@@ -1,0 +1,182 @@
+@mixin border-radius ($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,900|Black+Ops+One);
+body {
+    background: #ccc;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    white-space: 60px;
+}
+a {
+    color: #000;
+    transition: 0.5s;
+}
+a:hover,
+a:active {
+    text-decoration: none;
+    color: red;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+code {
+    font-size: 14px;
+}
+.panel-default {
+    border: none;
+}
+.panel-body {
+    background: #999999;
+}
+.panel-footer {
+    p {
+        font-weight: bold;
+    }
+}
+.black-block,
+.white-block,
+.red-block {
+    width: 100px;
+    height: 100px;
+    margin: 2px auto;
+}
+.color-block {
+    h1 {
+        color: #000;
+    }
+}
+.black-block {
+    background: #000;
+}
+.white-block {
+    background: #fff;
+}
+.red-block {
+    background: #bf311a;
+}
+.panel-row,
+.common-fonts,
+.web-fonts,
+.common-verbiage {
+    background: none;
+    margin-top: 40px;
+}
+.web-font-block {
+    p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 45px;
+        text-align: center;
+        color: #000;
+    }
+    .lowercase {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: lowercase;
+    }
+}
+.web-font-block-lato {
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 45px;
+        text-align: center;
+        color: #000;
+    }
+    .lowercase-lato {
+        text-transform: lowercase;
+    }
+}
+
+.web-font-block-blackops {
+    p {
+        font-family: 'Black Ops One', sans-serif;
+        font-size: 45px;
+        text-align: center;
+        color: #000;
+    }
+    
+    .lowercase-blackops {
+        text-transform: lowercase;
+    }
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.child {
+    flex: 1;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-box {
+    flex: 1;
+}
+
+
+.image-row {
+    padding-bottom: 40px;
+}
+.box-panel {
+    background: darkgrey;
+    display: block;
+    img {
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+a img {
+    transition: 1s;
+}
+
+a img:hover {
+    opacity: 0.2;
+}
+
+
+
+/**MEDIA QUERY-480 MAX-WIDTH***************************************************************************************************************************************************************/
+@media all and (max-width: 480px) {
+    .starter-template {
+        h1 {
+            text-align: center;
+            font-size: 28px;
+        }
+    }
+    .box,
+    .color-block,
+    .font-block,
+    .web-fonts {
+        h1 {
+            font-size: 24px;
+        }
+    }
+    .web-font-block,
+    .web-font-block-lato,
+    .web-font-block-blackops {
+        p {
+            font-size: 18px;
+        }
+    }
+    
+    .box-container {
+        flex-direction: column;
+    }
+}
