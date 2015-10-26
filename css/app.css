@@ -120,7 +120,9 @@ a img:hover {
   opacity: 0.2; }
 
 .footer p {
-  padding: 0 10px; }
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 2px;
+  text-align: justify; }
 
 /**MEDIA QUERY-480 MAX-WIDTH***************************************************************************************************************************************************************/
 @media all and (max-width: 480px) {
@@ -131,7 +133,8 @@ a img:hover {
   .box h1,
   .color-block h1,
   .font-block h1,
-  .web-fonts h1 {
+  .web-fonts h1,
+  .image-row h1 {
     font-size: 24px; }
 
   .web-font-block p,

@@ -152,7 +152,9 @@ a img:hover {
 
 .footer {
     p {
-        padding: 0 10px;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0 2px;
+        text-align: justify;
     }
 }
 
@@ -169,7 +171,8 @@ a img:hover {
     .box,
     .color-block,
     .font-block,
-    .web-fonts {
+    .web-fonts,
+    .image-row {
         h1 {
             font-size: 24px;
         }
