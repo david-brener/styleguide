@@ -767,6 +767,9 @@ code {
     margin: 0 auto;
     padding: 20px; }
 
+.box-panel a {
+  outline: 0; }
+
 a img {
   transition: 1s; }
 
