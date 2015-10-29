@@ -668,16 +668,14 @@ h6 {
   color: #000;
   white-space: 60px; }
 
-a {
+h1 a {
   color: #000;
   transition: 0.5s; }
-
-a:hover,
-a:active {
+h1 a:hover,
+h1 a:active {
   text-decoration: none;
   color: red; }
-
-a:visited {
+h1 a:visited {
   text-decoration: none;
   color: #000; }
 
